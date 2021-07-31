@@ -19,6 +19,8 @@ def ogr_ekle():
     ad = input("öğrenci adı: ")
     soyad = input("öğrenci soyadı: ")
 
+
+        
     table.insert({"no": int(no), "ad": ad, "soyad": soyad})
     for i in table.find({"no": int(no)}):
         print(
